@@ -1,0 +1,700 @@
+<div class="content">
+    <div class="container">
+        <div class="row">
+
+
+            <!-- Profile Sidebar -->
+            <div class="col-md-3 col-lg-3 col-xl-3 theiaStickySidebar">
+                <div class="profile-sidebar">
+                    <div class="widget-profile pro-widget-content">
+                        <div class="profile-info-widget">
+                            <a href="#" class="booking-doc-img">
+                                <img src="assets/img/patients/patient.jpg" alt="User Image">
+                            </a>
+                            <div class="profile-det-info">
+                                <h3>Richard Wilson</h3>
+                                <div class="indicator"></div>
+
+                                <div class="user-details">
+                                    <p>
+                                        Any one can join with but Social network us if you want Any one can join with us
+                                        if you want
+                                    </p>
+                                    <h5><i class="fa fa-suitcase"></i>Graphic Designer</h5>
+                                    <h5><i class="fa fa-graduation-cap"></i>BS Computer Science</h5>
+                                    <h5><i class="fa fa-heartbeat"></i> Travel, Swimming</h5>
+                                    <h5><i class="fa fa-birthday-cake"></i> 24 Jul 1983, 38 years</h5>
+                                    <h5 class="mb-0"><i class="fa fa-map-marker"></i>Melbourne, Australia</h5>
+
+                                </div>
+                                <!-- <div >
+                                    <button class="btn btn-primary btn-block btn-lg login-btn"  (click)="login()">Login</button>
+
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dashboard-widget">
+
+                    </div>
+
+                </div>
+                <div class="profile-sidebar">
+                    <h4 class="widget-title">Suggested Friends</h4>
+                    <div class="dashboard-widget">
+                        <nav class="dashboard-menu">
+                            <ul>
+                                <li [ngClass]="{'active': selectedTab == 'dashboard'}">
+                                    <a (click)="openTab.emit('dashboard')" class="teacher-info">
+                                        <!-- <i class="fa fa-columns"></i> -->
+                                        <img src="assets/img/doctors/doctor-07.jpg" alt="" style="float: left;">
+
+                                        <span>Richard Wilson</span>
+                                        <p style="font-size: 10px;">Graphic Designer</p>
+                                        <!-- <p>Dashboard</p> -->
+
+                                    </a>
+                                </li>
+                                <li [ngClass]="{'active': selectedTab == 'dashboard'}">
+                                    <a (click)="openTab.emit('dashboard')" class="teacher-info">
+                                        <!-- <i class="fa fa-columns"></i> -->
+                                        <img src="assets/img/doctors/doctor-08.jpg" alt="" style="float: left;">
+
+                                        <span>Richard Wilson</span>
+                                        <p style="font-size: 10px;">Graphic Designer</p>
+                                        <!-- <p>Dashboard</p> -->
+
+                                    </a>
+                                </li>
+                                <li [ngClass]="{'active': selectedTab == 'dashboard'}">
+                                    <a (click)="openTab.emit('dashboard')" class="teacher-info">
+                                        <!-- <i class="fa fa-columns"></i> -->
+                                        <img src="assets/img/doctors/doctor-09.jpg" alt="" style="float: left;">
+
+                                        <span>Richard Wilson</span>
+                                        <p style="font-size: 10px;">Graphic Designer</p>
+                                        <!-- <p>Dashboard</p> -->
+
+                                    </a>
+                                </li>
+                                <li [ngClass]="{'active': selectedTab == 'dashboard'}">
+                                    <a (click)="openTab.emit('dashboard')" class="teacher-info">
+                                        <!-- <i class="fa fa-columns"></i> -->
+                                        <img src="assets/img/doctors/doctor-10.jpg" alt="" style="float: left;">
+
+                                        <span>Richard Wilson</span>
+                                        <p style="font-size: 10px;">Graphic Designer</p>
+                                        <!-- <p>Dashboard</p> -->
+
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+
+                </div>
+            </div>
+            <!-- / Profile Sidebar -->
+
+            <div class="col-md-6 col-lg-6 col-xl-6">
+
+                <div class="col-md-12">
+
+                    <div class="tabs">
+
+                        <input type="radio" id="tab1" name="tab-control" checked>
+                        <input type="radio" id="tab2" name="tab-control">
+                        <input type="radio" id="tab3" name="tab-control">
+                        <input type="radio" id="tab4" name="tab-control">
+                        <ul>
+                            <li title="Timeline" (click)="selectedTab = 'timeline'"><label for="tab1" role="button" ><i
+                                        class="fa fa-suitcase"></i><span>Timeline</span></label></li>
+                            <li title="Courses"  (click)="selectedTab = 'courses'"><label for="tab2" role="button"><i class="fa fa-suitcase"></i>
+                                    <span>Courses</span></label></li>
+                            <li title="Shipping" (click)="selectedTab = 'friends'"><label for="tab3" role="button"><i class="fa fa-suitcase"></i>
+                                    <span>Friends</span></label></li>
+                            <li title="Returns" (click)="selectedTab = 'groups'"><label for="tab4" role="button"><i class="fa fa-suitcase"></i>
+                                    <span>Groups</span></label></li>
+                        </ul>
+
+                        <div class="slider">
+                            <div class="indicator"></div>
+                        </div>
+
+                    </div>
+                </div>
+               <div class="timeline" *ngIf="selectedTab == 'timeline'" style="padding-top: 30px;">
+                <div class="col-md-12" >
+                    <form class="search-form">
+                        <input type="search" value="" placeholder="Search" class="search-input">
+                        <button type="submit" class="search-button">
+                            <svg class="submit-button">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#search"></use>
+                            </svg>
+                        </button>
+                        <div class="search-option">
+                            <div>
+                                <input name="type" type="radio" value="type-users" id="type-users">
+                                <label for="type-users">
+                                    <svg class="edit-pen-title">
+                                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#user"></use>
+                                    </svg>
+                                    <span>Users</span>
+                                </label>
+                            </div>
+
+                            <div>
+                                <input name="type" type="radio" value="type-posts" id="type-posts">
+                                <label for="type-posts">
+                                    <svg class="edit-pen-title">
+                                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#post"></use>
+                                    </svg>
+                                    <span>Posts</span>
+                                </label>
+                            </div>
+                            <div>
+                                <input name="type" type="radio" value="type-images" id="type-images">
+                                <label for="type-images">
+                                    <svg class="edit-pen-title">
+                                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#images"></use>
+                                    </svg>
+                                    <span>Images</span>
+                                </label>
+                            </div>
+                            <div>
+                                <input name="type" type="radio" value="type-special" id="type-special" checked="">
+                                <label for="type-special">
+                                    <svg class="edit-pen-title">
+                                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#special"></use>
+                                    </svg>
+                                    <span>Special</span>
+                                </label>
+                            </div>
+                        </div>
+                    </form>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="0" height="0" display="none">
+                        <symbol id="search" viewBox="0 0 32 32">
+                            <path
+                                d="M 19.5 3 C 14.26514 3 10 7.2651394 10 12.5 C 10 14.749977 10.810825 16.807458 12.125 18.4375 L 3.28125 27.28125 L 4.71875 28.71875 L 13.5625 19.875 C 15.192542 21.189175 17.250023 22 19.5 22 C 24.73486 22 29 17.73486 29 12.5 C 29 7.2651394 24.73486 3 19.5 3 z M 19.5 5 C 23.65398 5 27 8.3460198 27 12.5 C 27 16.65398 23.65398 20 19.5 20 C 15.34602 20 12 16.65398 12 12.5 C 12 8.3460198 15.34602 5 19.5 5 z" />
+                        </symbol>
+                        <!-- <symbol id="user" viewBox="0 0 32 32">
+                          <path d="M 16 4 C 12.145852 4 9 7.1458513 9 11 C 9 13.393064 10.220383 15.517805 12.0625 16.78125 C 8.485554 18.302923 6 21.859881 6 26 L 8 26 C 8 21.533333 11.533333 18 16 18 C 20.466667 18 24 21.533333 24 26 L 26 26 C 26 21.859881 23.514446 18.302923 19.9375 16.78125 C 21.779617 15.517805 23 13.393064 23 11 C 23 7.1458513 19.854148 4 16 4 z M 16 6 C 18.773268 6 21 8.2267317 21 11 C 21 13.773268 18.773268 16 16 16 C 13.226732 16 11 13.773268 11 11 C 11 8.2267317 13.226732 6 16 6 z" /></symbol>
+                        <symbol id="images" viewbox="0 0 32 32">
+                          <path d="M 2 5 L 2 6 L 2 26 L 2 27 L 3 27 L 29 27 L 30 27 L 30 26 L 30 6 L 30 5 L 29 5 L 3 5 L 2 5 z M 4 7 L 28 7 L 28 20.90625 L 22.71875 15.59375 L 22 14.875 L 21.28125 15.59375 L 17.46875 19.40625 L 11.71875 13.59375 L 11 12.875 L 10.28125 13.59375 L 4 19.875 L 4 7 z M 24 9 C 22.895431 9 22 9.8954305 22 11 C 22 12.104569 22.895431 13 24 13 C 25.104569 13 26 12.104569 26 11 C 26 9.8954305 25.104569 9 24 9 z M 11 15.71875 L 20.1875 25 L 4 25 L 4 22.71875 L 11 15.71875 z M 22 17.71875 L 28 23.71875 L 28 25 L 23.03125 25 L 18.875 20.8125 L 22 17.71875 z" />
+                        </symbol>
+                        <symbol id="post" viewbox="0 0 32 32">
+                          <path d="M 3 5 L 3 6 L 3 23 C 3 25.209804 4.7901961 27 7 27 L 25 27 C 27.209804 27 29 25.209804 29 23 L 29 13 L 29 12 L 28 12 L 23 12 L 23 6 L 23 5 L 22 5 L 4 5 L 3 5 z M 5 7 L 21 7 L 21 12 L 21 13 L 21 23 C 21 23.73015 21.221057 24.41091 21.5625 25 L 7 25 C 5.8098039 25 5 24.190196 5 23 L 5 7 z M 7 9 L 7 10 L 7 13 L 7 14 L 8 14 L 18 14 L 19 14 L 19 13 L 19 10 L 19 9 L 18 9 L 8 9 L 7 9 z M 9 11 L 17 11 L 17 12 L 9 12 L 9 11 z M 23 14 L 27 14 L 27 23 C 27 24.190196 26.190196 25 25 25 C 23.809804 25 23 24.190196 23 23 L 23 14 z M 7 15 L 7 17 L 12 17 L 12 15 L 7 15 z M 14 15 L 14 17 L 19 17 L 19 15 L 14 15 z M 7 18 L 7 20 L 12 20 L 12 18 L 7 18 z M 14 18 L 14 20 L 19 20 L 19 18 L 14 18 z M 7 21 L 7 23 L 12 23 L 12 21 L 7 21 z M 14 21 L 14 23 L 19 23 L 19 21 L 14 21 z" />
+                        </symbol>
+                        <symbol id="special" viewbox="0 0 32 32">
+                          <path d="M 4 4 L 4 5 L 4 27 L 4 28 L 5 28 L 27 28 L 28 28 L 28 27 L 28 5 L 28 4 L 27 4 L 5 4 L 4 4 z M 6 6 L 26 6 L 26 26 L 6 26 L 6 6 z M 16 8.40625 L 13.6875 13.59375 L 8 14.1875 L 12.3125 18 L 11.09375 23.59375 L 16 20.6875 L 20.90625 23.59375 L 19.6875 18 L 24 14.1875 L 18.3125 13.59375 L 16 8.40625 z M 16 13.3125 L 16.5 14.40625 L 17 15.5 L 18.1875 15.59375 L 19.40625 15.6875 L 18.5 16.5 L 17.59375 17.3125 L 17.8125 18.40625 L 18.09375 19.59375 L 17 19 L 16 18.40625 L 15 19 L 14 19.59375 L 14.3125 18.40625 L 14.5 17.3125 L 13.59375 16.5 L 12.6875 15.6875 L 13.90625 15.59375 L 15.09375 15.5 L 15.59375 14.40625 L 16 13.3125 z" />
+                        </symbol> -->
+                    </svg>
+
+                </div>
+                <div class="col-md-12" style="top: 8%;">
+                    <!-- Doctor Widget -->
+                    <div class="profile-widget">
+                        <h3 class="title">
+                            <a href="doctor-profile.html">Ruby Perrin</a>
+                            <i class="fa fa-check-circle verified"></i>
+                        </h3>
+                        <div class="doc-img">
+                            <a>
+                                <img class="img-fluid" alt="User Image" src="assets/img/doctors/doctor-03.jpg">
+                            </a>
+                            <a href="javascript:void(0)" class="fav-btn">
+                                <i class="fa fa-bookmark"></i>
+                            </a>
+                        </div>
+
+                        <div class="pro-content">
+
+                            <div class="row">
+                                <div class="col-12">
+                                    <p style="font-family: serif;">
+                                        Each example listed in this blog post are all different in some way and all
+                                        bring something
+                                        unique to their readers & subscribers. I want to show you what is possible and
+                                        how you can take
+                                        inspiration from them and create an awesome blog of your own.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="row row-sm">
+                                <div class="col-2">
+                                    <i class="fa fa-heart-o"></i> 2K+
+                                </div>
+                                <div class="col-2">
+                                    <i class="fa fa-comments-o"></i> 100
+                                </div>
+                                <div class="col-2">
+                                    <i class="fa fa-share-alt" aria-hidden="true"></i> 30K+
+                                </div>
+                                <div class="col-4">
+
+                                </div>
+                                <div class="col-2" style="float: right;">
+                                    <i class="fa fa-clock-o" aria-hidden="true"></i> 2 day
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="profile-widget">
+                        <h3 class="title">
+                            <a href="doctor-profile.html">Ruby Perrin</a>
+                            <i class="fa fa-check-circle verified"></i>
+                        </h3>
+                        <div class="pro-content">
+
+                            <div class="row">
+                                <div class="col-12">
+                                    <p style="font-family: serif;">
+                                        Each example listed in this blog post are all different in some way and all
+                                        bring something
+                                        unique to their readers & subscribers. I want to show you what is possible and
+                                        how you can take
+                                        inspiration from them and create an awesome blog of your own.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="row row-sm">
+                                <div class="col-2">
+                                    <i class="fa fa-heart-o"></i> 2K+
+                                </div>
+                                <div class="col-2">
+                                    <i class="fa fa-comments-o"></i> 100
+                                </div>
+                                <div class="col-2">
+                                    <i class="fa fa-share-alt" aria-hidden="true"></i> 30K+
+                                </div>
+                                <div class="col-4">
+
+                                </div>
+                                <div class="col-2" style="float: right;">
+                                    <i class="fa fa-clock-o" aria-hidden="true"></i> 2 day
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="profile-widget">
+                        <h3 class="title">
+                            <a href="doctor-profile.html">Ruby Perrin</a>
+                            <i class="fa fa-check-circle verified"></i>
+                        </h3>
+                        <div class="doc-img">
+                            <a>
+                                <img class="img-fluid" alt="User Image" src="assets/img/doctors/doctor-03.jpg">
+                            </a>
+                            <a href="javascript:void(0)" class="fav-btn">
+                                <i class="fa fa-bookmark"></i>
+                            </a>
+                        </div>
+                        <div class="pro-content">
+
+
+                            <div class="row row-sm">
+                                <div class="col-2">
+                                    <i class="fa fa-heart-o"></i> 2K+
+                                </div>
+                                <div class="col-2">
+                                    <i class="fa fa-comments-o"></i> 100
+                                </div>
+                                <div class="col-2">
+                                    <i class="fa fa-share-alt" aria-hidden="true"></i> 30K+
+                                </div>
+                                <div class="col-4">
+
+                                </div>
+                                <div class="col-2" style="float: right;">
+                                    <i class="fa fa-clock-o" aria-hidden="true"></i> 2 day
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /Doctor Widget -->
+                </div>
+               </div>
+               <div class="courses" *ngIf="selectedTab == 'courses'" style="padding-top: 30px;">
+             <div class="row">
+                 <div class="col-md-6">
+                    <div class="card" style="width: 14rem;">
+                        <img class="bd-placeholder-img card-img-top" width="100%" height="100" src="https://cdn01.alison-static.net/courses/1703/alison_courseware_intro_1703.jpg" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" role="img">
+                      
+                        <div class="card-body">
+                          <h4 class="widget-title">Machine Learning</h4>
+
+                          <p class="card-text">Quick sample text to create the card title and make up the body of the card's content.</p>
+                        </div>
+                       
+                        <!-- <div class="card-body">
+                          <a href="#" class="card-link">Card link</a>
+                          <a href="#" class="card-link">Another link</a>
+                        </div> -->
+                      </div>
+                 </div>
+                 <div class="col-md-6">
+                    <div class="card" style="width: 14rem;">
+                        <img class="bd-placeholder-img card-img-top" width="100%" height="100" src="https://www.techworld.com/cmsdata/slideshow/3639672/-picture-id985024622_thumb350.jpg" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" role="img">
+                      
+                        <div class="card-body">
+                            <h4 class="widget-title">Cloud Computing</h4>
+                          <p class="card-text">Quick sample text to create the card title and make up the body of the card's content.</p>
+                        </div>
+                       
+                        <!-- <div class="card-body">
+                          <a href="#" class="card-link">Card link</a>
+                          <a href="#" class="card-link">Another link</a>
+                        </div> -->
+                      </div>
+                 </div>
+                 <div class="col-md-6">
+                    <div class="card" style="width: 14rem;">
+                        <img class="bd-placeholder-img card-img-top" width="100%" height="100" src="https://www.edx.org/sites/default/files/xseries_coursecard.png" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" role="img">
+                      
+                        <div class="card-body">
+                         
+                          <h4 class="widget-title">Web Devlopmenmt</h4>
+
+                          <p class="card-text">Quick sample text to create the card title and make up the body of the card's content.</p>
+                        </div>
+                       
+                        <!-- <div class="card-body">
+                          <a href="#" class="card-link">Card link</a>
+                          <a href="#" class="card-link">Another link</a>
+                        </div> -->
+                      </div>
+                 </div>
+             </div>
+               </div>
+               <div class="courses" *ngIf="selectedTab == 'friends'" style="padding-top: 30px;">
+                <div class="container">
+                    <!-- <div class="create-post">
+                        <div class="row">
+                            <div class="col-md-8">
+                                <div class="row">
+                                    <div class="col-md-7 col-sm-7">
+                                      <div class="form-group">
+                                        <img src="https://bootdey.com/img/Content/avatar/avatar1.png" alt="" class="profile-photo-md">
+                                        <textarea name="texts" id="exampleTextarea" cols="30" rows="1" class="form-control" placeholder="Write what you wish"></textarea>
+                                      </div>
+                                    </div>
+                                    <div class="col-md-5 col-sm-5">
+                                      <div class="tools">
+                                        <ul class="publishing-tools list-inline">
+                                          <li><a href="#"><i class="fa fa-pencil-square-o"></i></a></li>
+                                          <li><a href="#"><i class="fa fa-file-image-o"></i></a></li>
+                                          <li><a href="#"><i class="fa fa-video-camera"></i></a></li>
+                                          <li><a href="#"><i class="fa fa-map"></i></a></li>
+                                        </ul>
+                                        <button class="btn btn-primary pull-right">Publish</button>
+                                      </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+                    
+                    <div class="friend-list">
+                        <div class="row">
+                            <div class="col-md-6 col-sm-6">
+                              <div class="friend-card">
+                                  <img src="https://i.ytimg.com/vi/8qLL2Gx3I_k/maxresdefault.jpg" height="130" alt="profile-cover" class="img-responsive cover">
+                                  <div class="card-info">
+                                  <img src="https://bootdey.com/img/Content/avatar/avatar7.png" alt="user" class="profile-photo-lg">
+                                  <div class="friend-info">
+                                    <a href="#" class="pull-right text-green">My Friend</a>
+                                      <h5><a href="timeline.html" class="profile-link">Sophia Lee</a></h5>
+                                      <p>Student at Harvard</p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            
+                            <div class="col-md-6 col-sm-6">
+                              <div class="friend-card">
+                                  <img height="130" src="https://www.setaswall.com/wp-content/uploads/2017/06/Dont-stress-me-you-cant-impress-me-851-x-315-768x284.jpg" alt="profile-cover" class="img-responsive cover">
+                                  <div class="card-info">
+                                  <img src="https://bootdey.com/img/Content/avatar/avatar6.png" alt="user" class="profile-photo-lg">
+                                  <div class="friend-info">
+                                    <a href="#" class="pull-right text-green">My Friend</a>
+                                      <h5><a href="timeline.html" class="profile-link">Sophia Lee</a></h5>
+                                      <p>Student at Harvard</p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            
+                            <div class="col-md-6 col-sm-6">
+                              <div class="friend-card">
+                                  <img height="130" src="https://www.askideas.com/media/13/I-Love-Music-Facebook-Cover-Image.jpg" alt="profile-cover" class="img-responsive cover">
+                                  <div class="card-info">
+                                  <img src="https://bootdey.com/img/Content/avatar/avatar5.png" alt="user" class="profile-photo-lg">
+                                  <div class="friend-info">
+                                    <a href="#" class="pull-right text-green">My Friend</a>
+                                      <h5><a href="timeline.html" class="profile-link">Sophia Lee</a></h5>
+                                      <p>Student at Harvard</p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            
+                            <div class="col-md-6 col-sm-6">
+                              <div class="friend-card">
+                                  <img  height="130" src="https://timelinecovers.pro/facebook-cover/thumbs/Best-Covers-For-Facebook-Timeline-sunflower.jpg" alt="profile-cover" class="img-responsive cover">
+                                  <div class="card-info">
+                                  <img src="https://bootdey.com/img/Content/avatar/avatar4.png" alt="user" class="profile-photo-lg">
+                                  <div class="friend-info">
+                                    <a href="#" class="pull-right text-green">My Friend</a>
+                                      <h5><a href="timeline.html" class="profile-link">Sophia Lee</a></h5>
+                                      <p>Student at Harvard</p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            
+                            <div  class="col-md-6 col-sm-6">
+                              <div class="friend-card">
+                                  <img height="130" src="https://www.stuffside.com/wp-content/uploads/2018/12/2020-New-Year-FB-Cover-Picture.jpg" alt="profile-cover" class="img-responsive cover">
+                                  <div class="card-info">
+                                  <img src="https://bootdey.com/img/Content/avatar/avatar3.png" alt="user" class="profile-photo-lg">
+                                  <div class="friend-info">
+                                    <a href="#" class="pull-right text-green">My Friend</a>
+                                      <h5><a href="timeline.html" class="profile-link">Sophia Lee</a></h5>
+                                      <p>Student at Harvard</p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            
+                            <div class="col-md-6 col-sm-6">
+                              <div class="friend-card">
+                                  <img height="130" src="http://www.coverbash.com/wp-content/covers/flower-bunch-facebook-cover.jpg" alt="profile-cover" class="img-responsive cover">
+                                  <div class="card-info">
+                                  <img src="https://bootdey.com/img/Content/avatar/avatar2.png" alt="user" class="profile-photo-lg">
+                                  <div class="friend-info">
+                                    <a href="#" class="pull-right text-green">My Friend</a>
+                                      <h5><a href="timeline.html" class="profile-link">Sophia Lee</a></h5>
+                                      <p>Student at Harvard</p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="courses" *ngIf="selectedTab == 'groups'" style="padding-top: 30px;">
+                <div class="container">
+                  
+                    <button type="button" class="btn btn-default waves-effect waves-light" >Create New Group</button>
+
+                    <div class="friend-list">
+                        <div class="row" style="padding-top: 20px;">
+                            <div class="col-md-12 col-sm-12">
+                              <div class="friend-card">
+                                  <img style="width: 100%;" src="https://i.ytimg.com/vi/8qLL2Gx3I_k/maxresdefault.jpg" height="130" alt="profile-cover" class="img-responsive cover">
+                                  <div class="card-info">
+                                  <!-- <img src="https://bootdey.com/img/Content/avatar/avatar7.png" alt="user" class="profile-photo-lg"> -->
+                                  <!-- <div class="friend-info">
+                                    <a href="#" class="pull-right text-green">My Friend</a>
+                                      <h5><a href="timeline.html" class="profile-link">Sophia Lee</a></h5>
+                                      <p>Student at Harvard</p>
+                                  </div> -->
+                                </div>
+                              </div>
+                            </div>
+                            
+                            <div class="col-md-12 col-sm-12">
+                              <div class="friend-card">
+                                  <img height="130" style="width: 100%;" src="https://www.setaswall.com/wp-content/uploads/2017/06/Dont-stress-me-you-cant-impress-me-851-x-315-768x284.jpg" alt="profile-cover" class="img-responsive cover">
+                                  <div class="card-info">
+                                  <!-- <img src="https://bootdey.com/img/Content/avatar/avatar6.png" alt="user" class="profile-photo-lg"> -->
+                                  <!-- <div class="friend-info">
+                                    <a href="#" class="pull-right text-green">My Friend</a>
+                                      <h5><a href="timeline.html" class="profile-link">Sophia Lee</a></h5>
+                                      <p>Student at Harvard</p>
+                                  </div> -->
+                                </div>
+                              </div>
+                            </div>
+                            
+                            <div class="col-md-12 col-sm-12">
+                              <div class="friend-card">
+                                  <img height="130" style="width: 100%;" src="https://www.askideas.com/media/13/I-Love-Music-Facebook-Cover-Image.jpg" alt="profile-cover" class="img-responsive cover">
+                                  <div class="card-info">
+                                  <!-- <img src="https://bootdey.com/img/Content/avatar/avatar5.png" alt="user" class="profile-photo-lg"> -->
+                                  <!-- <div class="friend-info">
+                                    <a href="#" class="pull-right text-green">My Friend</a>
+                                      <h5><a href="timeline.html" class="profile-link">Sophia Lee</a></h5>
+                                      <p>Student at Harvard</p>
+                                  </div> -->
+                                </div>
+                              </div>
+                            </div>
+                            
+                         
+                        </div>
+                    </div>
+                    <h4 style="text-align: center; color: #2bbbad;">load more...</h4>
+                </div>
+            </div>
+
+            </div>
+
+
+            <!-- Profile Sidebar -->
+            <div class="col-md-3 col-lg-3 col-xl-3 theiaStickySidebar">
+                <!-- <h4 class="widget-title">Photos </h4> -->
+
+                <div class="profile-sidebar col-12">
+                    <div class="row">
+                        <div class="col-md-6" style="    padding: 0px;">
+                            <img src="assets/img/patients/patient7.jpg" alt="User Image" style="width: 100%;">
+                        </div>
+                        <div class="col-md-6" style="    padding: 0px;">
+                            <img src="assets/img/patients/patient1.jpg" alt="User Image" style="width: 100%;">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6" style="    padding: 0px;">
+                            <img src="assets/img/patients/patient2.jpg" alt="User Image" style="width: 100%;">
+                        </div>
+                        <div class="col-md-6" style="    padding: 0px;">
+                            <img src="assets/img/patients/patient3.jpg" alt="User Image" style="width: 100%;">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6" style="    padding: 0px;">
+                            <img src="assets/img/patients/patient4.jpg" alt="User Image" style="width: 100%;">
+                        </div>
+                        <div class="col-md-6" style="    padding: 0px;">
+                            <img src="assets/img/patients/patient5.jpg" alt="User Image" style="width: 100%;">
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+                <div class="profile-sidebar">
+                    <h4 class="widget-title">Teacher List</h4>
+                    <div class="dashboard-widget">
+                        <nav class="dashboard-menu">
+                            <ul>
+                                <li [ngClass]="{'active': selectedTab == 'dashboard'}">
+                                    <a (click)="openTab.emit('dashboard')" class="teacher-info">
+                                        <!-- <i class="fa fa-columns"></i> -->
+                                        <img src="assets/img/doctors/doctor-07.jpg" alt="" style="float: left;">
+
+                                        <span>Richard Wilson</span>
+                                        <p style="font-size: 10px;">Graphic Designer</p>
+                                        <!-- <p>Dashboard</p> -->
+
+                                    </a>
+                                </li>
+                                <li [ngClass]="{'active': selectedTab == 'dashboard'}">
+                                    <a (click)="openTab.emit('dashboard')" class="teacher-info">
+                                        <!-- <i class="fa fa-columns"></i> -->
+                                        <img src="assets/img/doctors/doctor-08.jpg" alt="" style="float: left;">
+
+                                        <span>Richard Wilson</span>
+                                        <p style="font-size: 10px;">Graphic Designer</p>
+                                        <!-- <p>Dashboard</p> -->
+
+                                    </a>
+                                </li>
+                                <li [ngClass]="{'active': selectedTab == 'dashboard'}">
+                                    <a (click)="openTab.emit('dashboard')" class="teacher-info">
+                                        <!-- <i class="fa fa-columns"></i> -->
+                                        <img src="assets/img/doctors/doctor-09.jpg" alt="" style="float: left;">
+
+                                        <span>Richard Wilson</span>
+                                        <p style="font-size: 10px;">Graphic Designer</p>
+                                        <!-- <p>Dashboard</p> -->
+
+                                    </a>
+                                </li>
+                                <li [ngClass]="{'active': selectedTab == 'dashboard'}">
+                                    <a (click)="openTab.emit('dashboard')" class="teacher-info">
+                                        <!-- <i class="fa fa-columns"></i> -->
+                                        <img src="assets/img/doctors/doctor-10.jpg" alt="" style="float: left;">
+
+                                        <span>Richard Wilson</span>
+                                        <p style="font-size: 10px;">Graphic Designer</p>
+                                        <!-- <p>Dashboard</p> -->
+
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+
+                </div>
+
+
+
+                <div class="profile-sidebar">
+                    <h4 class="widget-title">Bookmarks</h4>
+                    <div class="dashboard-widget">
+                        <nav class="dashboard-menu">
+                            <ul>
+                                <li [ngClass]="{'active': selectedTab == 'dashboard'}">
+                                    <a (click)="openTab.emit('dashboard')" class="teacher-info">
+                                        <!-- <i class="fa fa-columns"></i> -->
+                                        <img src="assets/img/doctors/doctor-01.jpg" alt="" style="float: left;">
+
+                                        <span>Richard Wilson</span>
+                                        <p style="font-size: 10px;">Graphic Designer</p>
+                                        <!-- <p>Dashboard</p> -->
+
+                                    </a>
+                                </li>
+                                <li [ngClass]="{'active': selectedTab == 'dashboard'}">
+                                    <a (click)="openTab.emit('dashboard')" class="teacher-info">
+                                        <!-- <i class="fa fa-columns"></i> -->
+                                        <img src="assets/img/doctors/doctor-02.jpg" alt="" style="float: left;">
+
+                                        <span>Richard Wilson</span>
+                                        <p style="font-size: 10px;">Graphic Designer</p>
+                                        <!-- <p>Dashboard</p> -->
+
+                                    </a>
+                                </li>
+                                <li [ngClass]="{'active': selectedTab == 'dashboard'}">
+                                    <a (click)="openTab.emit('dashboard')" class="teacher-info">
+                                        <!-- <i class="fa fa-columns"></i> -->
+                                        <img src="assets/img/doctors/doctor-03.jpg" alt="" style="float: left;">
+
+                                        <span>Richard Wilson</span>
+                                        <p style="font-size: 10px;">Graphic Designer</p>
+                                        <!-- <p>Dashboard</p> -->
+
+                                    </a>
+                                </li>
+                                <li [ngClass]="{'active': selectedTab == 'dashboard'}">
+                                    <a (click)="openTab.emit('dashboard')" class="teacher-info">
+                                        <!-- <i class="fa fa-columns"></i> -->
+                                        <img src="assets/img/doctors/doctor-04.jpg" alt="" style="float: left;">
+
+                                        <span>Richard Wilson</span>
+                                        <p style="font-size: 10px;">Graphic Designer</p>
+                                        <!-- <p>Dashboard</p> -->
+
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+
+                </div>
+            </div>
+            <!-- / Profile Sidebar -->
+        </div>
+
+    </div>
+
+</div>

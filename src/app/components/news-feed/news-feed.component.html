@@ -1,0 +1,502 @@
+<div class="content">
+    <div class="container">
+        <div class="row">
+
+
+            <!-- Profile Sidebar -->
+            <div class="col-md-3 col-lg-3 col-xl-3 theiaStickySidebar">
+
+              
+                <div class="profile-sidebar">
+                    <h4 class="widget-title">Suggested Groups</h4>
+                    <div class="dashboard-widget">
+                        <nav class="dashboard-menu">
+                            <ul>
+                                <li [ngClass]="{'active': selectedTab == 'dashboard'}">
+                                    <a (click)="openTab.emit('dashboard')" class="teacher-info">
+                                        <!-- <i class="fa fa-columns"></i> -->
+                                        <img src="assets/img/doctors/doctor-07.jpg" alt="" style="float: left;">
+
+                                        <span>Richard Wilson</span>
+                                        <p style="font-size: 10px;">Graphic Designer</p>
+                                        <!-- <p>Dashboard</p> -->
+
+                                    </a>
+                                </li>
+                                <li [ngClass]="{'active': selectedTab == 'dashboard'}">
+                                    <a (click)="openTab.emit('dashboard')" class="teacher-info">
+                                        <!-- <i class="fa fa-columns"></i> -->
+                                        <img src="assets/img/doctors/doctor-08.jpg" alt="" style="float: left;">
+
+                                        <span>Richard Wilson</span>
+                                        <p style="font-size: 10px;">Graphic Designer</p>
+                                        <!-- <p>Dashboard</p> -->
+
+                                    </a>
+                                </li>
+                                <li [ngClass]="{'active': selectedTab == 'dashboard'}">
+                                    <a (click)="openTab.emit('dashboard')" class="teacher-info">
+                                        <!-- <i class="fa fa-columns"></i> -->
+                                        <img src="assets/img/doctors/doctor-09.jpg" alt="" style="float: left;">
+
+                                        <span>Richard Wilson</span>
+                                        <p style="font-size: 10px;">Graphic Designer</p>
+                                        <!-- <p>Dashboard</p> -->
+
+                                    </a>
+                                </li>
+                                <li [ngClass]="{'active': selectedTab == 'dashboard'}">
+                                    <a (click)="openTab.emit('dashboard')" class="teacher-info">
+                                        <!-- <i class="fa fa-columns"></i> -->
+                                        <img src="assets/img/doctors/doctor-10.jpg" alt="" style="float: left;">
+
+                                        <span>Richard Wilson</span>
+                                        <p style="font-size: 10px;">Graphic Designer</p>
+                                        <!-- <p>Dashboard</p> -->
+
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+
+                </div>
+                <div class="profile-sidebar">
+                    <h4 class="widget-title">Suggested Friends</h4>
+                    <div class="dashboard-widget">
+                        <nav class="dashboard-menu">
+                            <ul>
+                                <li [ngClass]="{'active': selectedTab == 'dashboard'}">
+                                    <a (click)="openTab.emit('dashboard')" class="teacher-info">
+                                        <!-- <i class="fa fa-columns"></i> -->
+                                        <img src="assets/img/doctors/doctor-07.jpg" alt="" style="float: left;">
+
+                                        <span>Richard Wilson</span>
+                                        <p style="font-size: 10px;">Graphic Designer</p>
+                                        <div class="search-option">
+                                            <div>
+                                                <input name="type" type="radio" value="type-users" id="type-users">
+                                                <label for="type-users">
+                                                    <i class="fa fa-user-plus" aria-hidden="true"></i>
+                                                    <span>Add</span>
+                                                </label>
+                                            </div>
+                                        </div>
+
+                                    </a>
+                                </li>
+                                <li [ngClass]="{'active': selectedTab == 'dashboard'}">
+                                    <a (click)="openTab.emit('dashboard')" class="teacher-info">
+                                        <!-- <i class="fa fa-columns"></i> -->
+                                        <img src="assets/img/doctors/doctor-08.jpg" alt="" style="float: left;">
+
+                                        <span>Richard Wilson</span>
+                                        <p style="font-size: 10px;">Graphic Designer</p>
+                                        <div class="search-option">
+                                            <div>
+                                                <input name="type" type="radio" value="type-users" id="type-users">
+                                                <label for="type-users">
+                                                    <i class="fa fa-user-plus" aria-hidden="true"></i>
+                                                    <span>Add</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li [ngClass]="{'active': selectedTab == 'dashboard'}">
+                                    <a (click)="openTab.emit('dashboard')" class="teacher-info">
+                                        <!-- <i class="fa fa-columns"></i> -->
+                                        <img src="assets/img/doctors/doctor-09.jpg" alt="" style="float: left;">
+
+                                        <span>Richard Wilson</span>
+                                        <p style="font-size: 10px;">Graphic Designer</p>
+                                        <div class="search-option">
+                                            <div>
+                                                <input name="type" type="radio" value="type-users" id="type-users">
+                                                <label for="type-users">
+                                                    <i class="fa fa-user-plus" aria-hidden="true"></i>
+                                                    <span>Add</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li [ngClass]="{'active': selectedTab == 'dashboard'}">
+                                    <a (click)="openTab.emit('dashboard')" class="teacher-info">
+                                        <!-- <i class="fa fa-columns"></i> -->
+                                        <img src="assets/img/doctors/doctor-10.jpg" alt="" style="float: left;">
+
+                                        <span>Richard Wilson</span>
+                                        <p style="font-size: 10px;">Graphic Designer</p>
+                                        <div class="search-option">
+                                            <div>
+                                                <input name="type" type="radio" value="type-users" id="type-users">
+                                                <label for="type-users">
+                                                    <i class="fa fa-user-plus" aria-hidden="true"></i>
+                                                    <span>Add</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+
+                </div>
+            </div>
+            <!-- / Profile Sidebar -->
+
+            <div class="col-md-6 col-lg-6 col-xl-6">
+                <div class="timeline">
+                    <div class="col-md-12">
+                        <a class="teacher-info story-image">
+                            <img src="assets/img/doctors/doctor-10.jpg" alt="">
+                        </a>
+                        <a class="teacher-info story-image">
+                            <img src="assets/img/doctors/doctor-10.jpg" alt="">
+                        </a>
+                        <a class="teacher-info story-image">
+                            <img src="assets/img/doctors/doctor-10.jpg" alt="">
+                        </a>
+                        <a class="teacher-info story-image">
+                            <img src="assets/img/doctors/doctor-10.jpg" alt="">
+                        </a>
+                        <a class="teacher-info story-image">
+                            <img src="assets/img/doctors/doctor-10.jpg" alt="">
+                        </a>
+                        <a class="teacher-info story-image">
+                            <img src="assets/img/doctors/doctor-10.jpg" alt="">
+                        </a>
+                        <a class="teacher-info story-image">
+                            <img src="assets/img/doctors/doctor-10.jpg" alt="">
+                        </a>
+                        <a class="teacher-info story-image">
+                            <img src="assets/img/doctors/doctor-10.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="col-md-12" style="padding-top: 40px;">
+                        <form class="search-form">
+                            <input type="search" value="" placeholder="What's on your mind!" class="search-input">
+                            <!-- <button type="submit" class="search-button">
+                                <svg class="submit-button">
+                                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#search"></use>
+                                </svg>
+                            </button> -->
+                            <div class="search-option">
+                                <div>
+                                    <input name="type" type="radio" value="type-users" id="type-users">
+                                    <label for="type-users">
+                                        <i class="fa fa-picture-o" aria-hidden="true"></i>
+                                        <span>Image</span>
+                                    </label>
+                                </div>
+
+                                <div>
+                                    <input name="type" type="radio" value="type-posts" id="type-posts">
+                                    <label for="type-posts">
+                                        <i class="fa fa-video-camera" aria-hidden="true"></i>
+
+                                        <span>Video</span>
+                                    </label>
+                                </div>
+
+                                <div>
+                                    <input name="type" type="radio" value="type-special" id="type-special" checked="">
+                                    <label for="type-special">
+                                        <i class="fa fa-files-o" aria-hidden="true"></i>
+                                        <span>Attachment</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </form>
+
+
+                    </div>
+                    <div class="col-md-12">
+                        <!-- Doctor Widget -->
+                        <div class="profile-widget">
+                            <h3 class="title">
+                                <a href="doctor-profile.html">Ruby Perrin</a>
+                                <i class="fa fa-check-circle verified"></i>
+                            </h3>
+                            <div class="doc-img">
+                                <a>
+                                    <img class="img-fluid" alt="User Image" src="assets/img/doctors/doctor-03.jpg">
+                                </a>
+                                <a href="javascript:void(0)" class="fav-btn">
+                                    <i class="fa fa-bookmark"></i>
+                                </a>
+                            </div>
+
+                            <div class="pro-content">
+
+                                <div class="row">
+                                    <div class="col-12">
+                                        <p style="font-family: serif;">
+                                            Each example listed in this blog post are all different in some way and all
+                                            bring something
+                                            unique to their readers & subscribers. I want to show you what is possible
+                                            and
+                                            how you can take
+                                            inspiration from them and create an awesome blog of your own.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="row row-sm">
+                                    <div class="col-2">
+                                        <i class="fa fa-heart-o"></i> 2K+
+                                    </div>
+                                    <div class="col-2">
+                                        <i class="fa fa-comments-o"></i> 100
+                                    </div>
+                                    <div class="col-2">
+                                        <i class="fa fa-share-alt" aria-hidden="true"></i> 30K+
+                                    </div>
+                                    <div class="col-4">
+
+                                    </div>
+                                    <div class="col-2" style="float: right;">
+                                        <i class="fa fa-clock-o" aria-hidden="true"></i> 2 day
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="profile-widget">
+                            <h3 class="title">
+                                <a href="doctor-profile.html">Ruby Perrin</a>
+                                <i class="fa fa-check-circle verified"></i>
+                            </h3>
+                            <div class="pro-content">
+
+                                <div class="row">
+                                    <div class="col-12">
+                                        <p style="font-family: serif;">
+                                            Each example listed in this blog post are all different in some way and all
+                                            bring something
+                                            unique to their readers & subscribers. I want to show you what is possible
+                                            and
+                                            how you can take
+                                            inspiration from them and create an awesome blog of your own.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="row row-sm">
+                                    <div class="col-2">
+                                        <i class="fa fa-heart-o"></i> 2K+
+                                    </div>
+                                    <div class="col-2">
+                                        <i class="fa fa-comments-o"></i> 100
+                                    </div>
+                                    <div class="col-2">
+                                        <i class="fa fa-share-alt" aria-hidden="true"></i> 30K+
+                                    </div>
+                                    <div class="col-4">
+
+                                    </div>
+                                    <div class="col-2" style="float: right;">
+                                        <i class="fa fa-clock-o" aria-hidden="true"></i> 2 day
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="profile-widget">
+                            <h3 class="title">
+                                <a href="doctor-profile.html">Ruby Perrin</a>
+                                <i class="fa fa-check-circle verified"></i>
+                            </h3>
+                            <div class="doc-img">
+                                <a>
+                                    <img class="img-fluid" alt="User Image" src="assets/img/doctors/doctor-03.jpg">
+                                </a>
+                                <a href="javascript:void(0)" class="fav-btn">
+                                    <i class="fa fa-bookmark"></i>
+                                </a>
+                            </div>
+                            <div class="pro-content">
+
+
+                                <div class="row row-sm">
+                                    <div class="col-2">
+                                        <i class="fa fa-heart-o"></i> 2K+
+                                    </div>
+                                    <div class="col-2">
+                                        <i class="fa fa-comments-o"></i> 100
+                                    </div>
+                                    <div class="col-2">
+                                        <i class="fa fa-share-alt" aria-hidden="true"></i> 30K+
+                                    </div>
+                                    <div class="col-4">
+
+                                    </div>
+                                    <div class="col-2" style="float: right;">
+                                        <i class="fa fa-clock-o" aria-hidden="true"></i> 2 day
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /Doctor Widget -->
+                    </div>
+                </div>
+
+
+
+
+            </div>
+
+
+            <!-- Profile Sidebar -->
+            <div class="col-md-3 col-lg-3 col-xl-3 theiaStickySidebar">
+                <!-- <h4 class="widget-title">Photos </h4> -->
+
+                <div class="profile-sidebar col-12">
+                    <div class="row">
+                        <div class="col-md-6" style="    padding: 0px;">
+                            <img src="assets/img/patients/patient7.jpg" alt="User Image" style="width: 100%;">
+                        </div>
+                        <div class="col-md-6" style="    padding: 0px;">
+                            <img src="assets/img/patients/patient1.jpg" alt="User Image" style="width: 100%;">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6" style="    padding: 0px;">
+                            <img src="assets/img/patients/patient2.jpg" alt="User Image" style="width: 100%;">
+                        </div>
+                        <div class="col-md-6" style="    padding: 0px;">
+                            <img src="assets/img/patients/patient3.jpg" alt="User Image" style="width: 100%;">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6" style="    padding: 0px;">
+                            <img src="assets/img/patients/patient4.jpg" alt="User Image" style="width: 100%;">
+                        </div>
+                        <div class="col-md-6" style="    padding: 0px;">
+                            <img src="assets/img/patients/patient5.jpg" alt="User Image" style="width: 100%;">
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+                <div class="profile-sidebar">
+                    <h4 class="widget-title">Teacher List</h4>
+                    <div class="dashboard-widget">
+                        <nav class="dashboard-menu">
+                            <ul>
+                                <li [ngClass]="{'active': selectedTab == 'dashboard'}">
+                                    <a (click)="openTab.emit('dashboard')" class="teacher-info">
+                                        <!-- <i class="fa fa-columns"></i> -->
+                                        <img src="assets/img/doctors/doctor-07.jpg" alt="" style="float: left;">
+
+                                        <span>Richard Wilson</span>
+                                        <p style="font-size: 10px;">Graphic Designer</p>
+                                        <!-- <p>Dashboard</p> -->
+
+                                    </a>
+                                </li>
+                                <li [ngClass]="{'active': selectedTab == 'dashboard'}">
+                                    <a (click)="openTab.emit('dashboard')" class="teacher-info">
+                                        <!-- <i class="fa fa-columns"></i> -->
+                                        <img src="assets/img/doctors/doctor-08.jpg" alt="" style="float: left;">
+
+                                        <span>Richard Wilson</span>
+                                        <p style="font-size: 10px;">Graphic Designer</p>
+                                        <!-- <p>Dashboard</p> -->
+
+                                    </a>
+                                </li>
+                                <li [ngClass]="{'active': selectedTab == 'dashboard'}">
+                                    <a (click)="openTab.emit('dashboard')" class="teacher-info">
+                                        <!-- <i class="fa fa-columns"></i> -->
+                                        <img src="assets/img/doctors/doctor-09.jpg" alt="" style="float: left;">
+
+                                        <span>Richard Wilson</span>
+                                        <p style="font-size: 10px;">Graphic Designer</p>
+                                        <!-- <p>Dashboard</p> -->
+
+                                    </a>
+                                </li>
+                                <li [ngClass]="{'active': selectedTab == 'dashboard'}">
+                                    <a (click)="openTab.emit('dashboard')" class="teacher-info">
+                                        <!-- <i class="fa fa-columns"></i> -->
+                                        <img src="assets/img/doctors/doctor-10.jpg" alt="" style="float: left;">
+
+                                        <span>Richard Wilson</span>
+                                        <p style="font-size: 10px;">Graphic Designer</p>
+                                        <!-- <p>Dashboard</p> -->
+
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+
+                </div>
+
+
+
+                <div class="profile-sidebar">
+                    <h4 class="widget-title">Bookmarks</h4>
+                    <div class="dashboard-widget">
+                        <nav class="dashboard-menu">
+                            <ul>
+                                <li [ngClass]="{'active': selectedTab == 'dashboard'}">
+                                    <a (click)="openTab.emit('dashboard')" class="teacher-info">
+                                        <!-- <i class="fa fa-columns"></i> -->
+                                        <img src="assets/img/doctors/doctor-01.jpg" alt="" style="float: left;">
+
+                                        <span>Richard Wilson</span>
+                                        <p style="font-size: 10px;">Graphic Designer</p>
+                                        <!-- <p>Dashboard</p> -->
+
+                                    </a>
+                                </li>
+                                <li [ngClass]="{'active': selectedTab == 'dashboard'}">
+                                    <a (click)="openTab.emit('dashboard')" class="teacher-info">
+                                        <!-- <i class="fa fa-columns"></i> -->
+                                        <img src="assets/img/doctors/doctor-02.jpg" alt="" style="float: left;">
+
+                                        <span>Richard Wilson</span>
+                                        <p style="font-size: 10px;">Graphic Designer</p>
+                                        <!-- <p>Dashboard</p> -->
+
+                                    </a>
+                                </li>
+                                <li [ngClass]="{'active': selectedTab == 'dashboard'}">
+                                    <a (click)="openTab.emit('dashboard')" class="teacher-info">
+                                        <!-- <i class="fa fa-columns"></i> -->
+                                        <img src="assets/img/doctors/doctor-03.jpg" alt="" style="float: left;">
+
+                                        <span>Richard Wilson</span>
+                                        <p style="font-size: 10px;">Graphic Designer</p>
+                                        <!-- <p>Dashboard</p> -->
+
+                                    </a>
+                                </li>
+                                <li [ngClass]="{'active': selectedTab == 'dashboard'}">
+                                    <a (click)="openTab.emit('dashboard')" class="teacher-info">
+                                        <!-- <i class="fa fa-columns"></i> -->
+                                        <img src="assets/img/doctors/doctor-04.jpg" alt="" style="float: left;">
+
+                                        <span>Richard Wilson</span>
+                                        <p style="font-size: 10px;">Graphic Designer</p>
+                                        <!-- <p>Dashboard</p> -->
+
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+
+                </div>
+            </div>
+            <!-- / Profile Sidebar -->
+        </div>
+
+    </div>
+
+</div>
